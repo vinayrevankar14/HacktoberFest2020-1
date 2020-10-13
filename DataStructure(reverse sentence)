@@ -1,0 +1,8 @@
+def reverse(sent):                  #function to reverse the sentence
+    split_sent = sent.split()               #sentence is split into word and stored in a list
+    rev = split_sent[::-1]                             #list is reversed
+    final = ' '.join(rev)             #list is joined and sentence is created
+    return final                                              #returns the reverse sentence
+
+s = input("Enter the sentence to reverse it: ")
+print(reverse(s))
